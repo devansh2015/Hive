@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!-- Hive Execution Parameters -->
+<configuration>
+<property>     
+ <name>javax.jdo.option.ConnectionURL</name>     
+ <value>jdbc:mysql://dn1.hadoop.com:3306/hive?createDatabaseIfNotExist=true</value>
+</property>
+<property>
+	<name>javax.jdo.option.ConnectionDriverName</name>
+	<value>com.mysql.jdbc.Driver</value>
+</property>
+<property>
+	<name>javax.jdo.option.ConnectionUserName</name>
+	<value>hive_user</value>
+</property>
+<property>
+	<name>javax.jdo.option.ConnectionPassword</name>
+	<value>hiv3us3r</value>
+</property>
+
+<property>
+	<name>hive.metastore.warehouse.dir</name>
+	<value>/hive/warehouse</value>
+</property>
+
+<property>
+  <name>javax.jdo.option.ConnectionDriverName</name>
+  <value>org.apache.derby.jdbc.EmbeddedDriver</value>
+  <description>Driver class name for a JDBC metastore</description>
+</property>
+
+<property>
+  <name>hive.hwi.war.file</name>
+  <value>$HIVE_HOME/lib/hive-hwi-0.13.1.jar</value>
+  <description>This is the WAR file with the jsp content for Hive Web Interface</description>
+</property>
+
+</configuration>
+
